@@ -1016,7 +1016,14 @@ class InstanceManager {
       authStrategy: new LocalAuth({ clientId: `company-${id}` }),
       puppeteer: {
         headless: true,
-        args: ['--no-sandbox', '--disable-setuid-sandbox']
+        args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--disable-gpu']
+      },
+      // Pin a known-good WhatsApp Web build so WAWebSocketModel loads
+      // (fixes "Cannot read properties of null (reading 'Socket')")
+      webVersion: '2.3000.1053021455-alpha',
+      webVersionCache: {
+        type: 'remote',
+        remotePath: 'https://raw.githubusercontent.com/wppconnect-team/wa-version/main/html/{version}.html'
       },
       qrMaxRetries: 0 // keep refreshing the QR code until it is scanned
     });
@@ -1125,7 +1132,12 @@ class InstanceManager {
 
     const client = new Client({
       authStrategy: new LocalAuth({ clientId: `branch-${bid}` }),
-      puppeteer: { headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox'] },
+      puppeteer: { headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--disable-gpu'] },
+      webVersion: '2.3000.1053021455-alpha',
+      webVersionCache: {
+        type: 'remote',
+        remotePath: 'https://raw.githubusercontent.com/wppconnect-team/wa-version/main/html/{version}.html'
+      },
       qrMaxRetries: 0
     });
     instance.client = client;
