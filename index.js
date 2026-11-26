@@ -1025,6 +1025,8 @@ class InstanceManager {
         type: 'remote',
         remotePath: 'https://raw.githubusercontent.com/wppconnect-team/wa-version/main/html/{version}.html'
       },
+      // Give the slow VPS more time to load WhatsApp Web (default 30s is too short)
+      authTimeoutMs: 180000,
       qrMaxRetries: 0 // keep refreshing the QR code until it is scanned
     });
     instance.client = client;
@@ -1138,6 +1140,7 @@ class InstanceManager {
         type: 'remote',
         remotePath: 'https://raw.githubusercontent.com/wppconnect-team/wa-version/main/html/{version}.html'
       },
+      authTimeoutMs: 180000,
       qrMaxRetries: 0
     });
     instance.client = client;
