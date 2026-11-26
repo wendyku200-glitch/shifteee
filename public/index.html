@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>更容易Eee (ShiftE+) — WhatsApp 排班／請假系統</title>
+  <meta name="description" content="更容易Eee (ShiftE+) 是香港中小企專用的 WhatsApp 排班與請假系統。員工用 WhatsApp 申請請假、換班，主管一鍵批准，自動記錄，毋須安裝新 App。">
+  <meta name="theme-color" content="#075e54">
+  <link rel="canonical" href="https://shifteee.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:url" content="https://shifteee.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="更容易Eee (ShiftE+) — WhatsApp 排班／請假系統">
+  <meta property="og:description" content="員工用 WhatsApp 請假、換班，主管秒批，自動記錄。每間公司專屬機器人，毋須安裝新 App。">
+  <meta property="og:site_name" content="更容易Eee (ShiftE+)">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23128c7e'/%3E%3Ctext x='32' y='44' font-size='36' text-anchor='middle' fill='white' font-family='sans-serif'%3ES%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要內容</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Shifa Home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span class="brand-text">
+          更容易Eee <em>ShiftE+</em>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="主要導覽">
+        <a href="#features">功能</a>
+        <a href="#how">如何運作</a>
+        <a href="#pricing">方案價錢</a>
+        <a href="#faq">常見問題</a>
+      </nav>
+
+      <div class="header-cta">
+        <a class="btn btn-ghost" href="/requests">管理員登入</a>
+        <a class="btn btn-primary" href="#pricing">立即開通</a>
+      </div>
+
+      <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="mobile-nav" data-mobile-nav aria-label="行動版導覽">
+      <a href="#features">功能</a>
+      <a href="#how">如何運作</a>
+      <a href="#pricing">方案價錢</a>
+      <a href="#faq">常見問題</a>
+      <a class="btn btn-primary" href="#pricing">立即開通</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy" data-reveal>
+          <span class="eyebrow">中小企專用 · 香港 WhatsApp 排班系統</span>
+          <h1>員工請假、換班，<br><span class="highlight">用 WhatsApp 一句話搞定</span></h1>
+          <p class="lede">
+            毋須安裝新 App。員工直接喺 WhatsApp 申請請假、換班，
+            主管一鍵批准或拒絕，自動回覆並記錄。每間公司一部專屬機器人，即開即用。
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="/register">立即開通 · 免安裝</a>
+            <a class="btn btn-outline btn-lg" href="#how">了解如何運作</a>
+          </div>
+          <ul class="hero-points">
+            <li>✅ 有薪／無薪假、事假／病假／產假／婚假</li>
+            <li>✅ 換班申請 + 主管審批 + 自動通知</li>
+            <li>✅ 專屬 QR Code 連結，毋須任何技術背景</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" data-reveal>
+          <div class="phone">
+            <div class="phone-notch" aria-hidden="true"></div>
+            <div class="phone-screen">
+              <div class="chat chat-in">
+                <p>👋 你好！我想請星期一病假</p>
+              </div>
+              <div class="chat chat-out">
+                <p>✅ 收到！請選擇：有薪 / 無薪假期</p>
+              </div>
+              <div class="chat chat-in">
+                <p>無薪，事假，有醫生紙</p>
+              </div>
+              <div class="chat chat-out">
+                <p>📋 已為你建立申請，#102</p>
+              </div>
+              <div class="chat chat-in">
+                <p>🔄 我想同小明換 7/1 晚班</p>
+              </div>
+              <div class="chat chat-out success">
+                <p>✅ 換班申請已提交，待主管批准</p>
+              </div>
+            </div>
+          </div>
+          <div class="float-card float-card--approved">
+            <span class="dot"></span>主管已批准換班
+          </div>
+          <div class="float-card float-card--logged">
+            📊 申請記錄已自動儲存
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust strip -->
+    <section class="trust-strip" aria-label="重點">
+      <div class="container">
+        <ul>
+          <li><strong>免安裝</strong><span>只用 WhatsApp</span></li>
+          <li><strong>自動記錄</strong><span>唔怕漏單</span></li>
+          <li><strong>一鍵審批</strong><span>主管秒回</span></li>
+          <li><strong>專屬機器人</strong><span>每間公司獨立</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">功能</span>
+          <h2>排班請假，一個 WhatsApp 搞掂</h2>
+          <p class="muted">專為香港餐飲、零售、護理等輪班行業而設。</p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature" data-reveal>
+            <div class="feature-icon">📋</div>
+            <h3>WhatsApp 請假申請</h3>
+            <p>員工直接喺 WhatsApp 申請假期，支援有薪／無薪、事假／病假／產假／婚假、醫生證明、日期與時段。</p>
+          </article>
+          <article class="feature" data-reveal>
+            <div class="feature-icon">🔄</div>
+            <h3>換班申請</h3>
+            <p>員工提出換班，指定同事、日期與時段，主管批准後自動通知雙方。</p>
+          </article>
+          <article class="feature" data-reveal>
+            <div class="feature-icon">✅</div>
+            <h3>一鍵批准／拒絕</h3>
+            <p>主管喺管理後台批准或拒絕，系統即時以 WhatsApp 通知員工，唔使逐個回覆。</p>
+          </article>
+          <article class="feature" data-reveal>
+            <div class="feature-icon">📊</div>
+            <h3>申請記錄查詢</h3>
+            <p>員工可自行查閱「我的記錄」，所有申請自動留底，清清楚楚。</p>
+          </article>
+          <article class="feature" data-reveal>
+            <div class="feature-icon">🤖</div>
+            <h3>專屬機器人 + QR Code</h3>
+            <p>每間公司獨立 WhatsApp 號碼與專屬 QR Code，開通即用，毋須技術背景。</p>
+          </article>
+          <article class="feature" data-reveal>
+            <div class="feature-icon">🖥️</div>
+            <h3>排班管理後台</h3>
+            <p>集中睇晒所有申請、留言記錄與公司設定，一目了然。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how" class="section section--alt">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">如何運作</span>
+          <h2>3 步即開通</h2>
+          <p class="muted">由付款到員工開始請假，只需幾分鐘。</p>
+        </div>
+
+        <ol class="steps">
+          <li class="step" data-reveal>
+            <span class="step-num">1</span>
+            <h3>選擇方案並付款</h3>
+            <p>揀標準版或專業版，用信用卡、AlipayHK 或 PayMe 完成付款。</p>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step-num">2</span>
+            <h3>掃描專屬 QR Code</h3>
+            <p>用公司嘅 WhatsApp 號碼掃描專屬 QR Code，完成連結。</p>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step-num">3</span>
+            <h3>員工即用，主管審批</h3>
+            <p>員工開始申請請假／換班，主管喺後台一鍵處理。</p>
+          </li>
+        </ol>
+
+        <div class="how-cta" data-reveal>
+          <a class="btn btn-primary btn-lg" href="/register">開始免費流程 →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">方案價錢</span>
+          <h2>簡單、透明嘅月費</h2>
+          <p class="muted">每間公司一部專屬機器人 + 管理後台，無隱藏收費。</p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="plan" data-reveal>
+            <h3>入門版</h3>
+            <div class="price">HK$199<span>/月</span></div>
+            <ul>
+              <li>1 個專屬 WhatsApp 機器人</li>
+              <li>請假／換班申請 + 審批</li>
+              <li>員工申請記錄查詢</li>
+              <li>排班管理後台</li>
+              <li>電郵支援</li>
+            </ul>
+            <a class="btn btn-outline btn-block" href="/register?plan=basic">選擇入門版</a>
+          </article>
+
+          <article class="plan plan--featured" data-reveal>
+            <span class="plan-badge">最受歡迎</span>
+            <h3>標準版</h3>
+            <div class="price">HK$299<span>/月</span></div>
+            <ul>
+              <li>入門版全部功能</li>
+              <li>員工人數不限</li>
+              <li>多管理員後台</li>
+              <li>優先技術支援</li>
+              <li>排班管理後台</li>
+            </ul>
+            <a class="btn btn-primary btn-block" href="/register?plan=starter">選擇標準版</a>
+          </article>
+
+          <article class="plan" data-reveal>
+            <h3>專業版</h3>
+            <div class="price">HK$599<span>/月</span></div>
+            <ul>
+              <li>標準版全部功能</li>
+              <li>進階自訂流程</li>
+              <li>多分店／多部門（按需求）</li>
+              <li>專屬客戶支援</li>
+              <li>排班管理後台</li>
+            </ul>
+            <a class="btn btn-outline btn-block" href="/register?plan=pro">選擇專業版</a>
+          </article>
+        </div>
+
+        <p class="pricing-note muted" data-reveal>
+          月費按公司計，毋須按人頭收費。
+          付款方式：信用卡（Stripe Checkout）· AlipayHK · PayMe。
+          付款成功後會自動開通，並顯示專屬 QR Code 連結。
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section section--alt">
+      <div class="container container--narrow">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">常見問題</span>
+          <h2>你可能想知道</h2>
+        </div>
+
+        <div class="faq-list" data-reveal>
+          <details class="faq">
+            <summary>員工需要安裝新 App 嗎？</summary>
+            <p>唔使。員工只需用自己嘅 WhatsApp，唔需要下載任何新 App 或學習新系統。</p>
+          </details>
+          <details class="faq">
+            <summary>點樣連結公司 WhatsApp？</summary>
+            <p>付款後系統會顯示一個專屬 QR Code，用公司嘅 WhatsApp 掃描即可完成連結，開通即用。</p>
+          </details>
+          <details class="faq">
+            <summary>支援邊啲假期類型？</summary>
+            <p>支援有薪／無薪假期，以及事假、病假、產假、婚假等分類，並可記錄醫生證明、日期與時段。</p>
+          </details>
+          <details class="faq">
+            <summary>主管喺邊度審批？</summary>
+            <p>主管登入排班管理後台，即可一鍵批准或拒絕申請，系統會自動以 WhatsApp 通知員工。</p>
+          </details>
+          <details class="faq">
+            <summary>可以轉用其他方案嗎？</summary>
+            <p>可以，請聯絡我們升級或調整方案，我們樂意按你嘅業務需要安排。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container" data-reveal>
+        <h2>準備好簡化你嘅排班請假流程？</h2>
+        <p>立即開通，幾分鐘內員工即可用 WhatsApp 請假、換班。</p>
+        <a class="btn btn-light btn-lg" href="/register">立即開通</a>
+        <a class="btn btn-ghost-light btn-lg" href="/requests">管理員登入</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">S</span>
+          <span class="brand-text">更容易Eee <em>ShiftE+</em></span>
+        </div>
+        <p class="muted">WhatsApp 排班／請假系統 — 為每間公司提供專屬機器人與 QR Code。</p>
+      </div>
+      <nav class="footer-nav" aria-label="頁尾導覽">
+        <a href="#features">功能</a>
+        <a href="#how">如何運作</a>
+        <a href="#pricing">方案價錢</a>
+        <a href="#faq">常見問題</a>
+        <a href="/register">立即開通</a>
+        <a href="/requests">管理員登入</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year></span> 更容易Eee (ShiftE+) · shifteee.com. 保留所有權利。</p>
+    </div>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+# 依賴
+node_modules/
+
+# 環境變數（內含密鑰，勿上傳）
+.env
+
+# WhatsApp 登入 session / 本地資料
+.wwebjs_auth/
+.wwebjs_cache/
+database.sqlite
+
+# 系統雜檔
+.DS_Store
+*.log
+npm-debug.log*
